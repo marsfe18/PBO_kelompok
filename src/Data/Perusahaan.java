@@ -13,6 +13,7 @@ import Data.Field.PencacahanDPP;
 import Data.Field.Subsektor;
 
 public class Perusahaan {
+    private Integer id;
     private Identitas identitasPerusahaan2_6;
     private PencacahanDPP pencacahanDPP;
     private Subsektor subsektor;
@@ -23,6 +24,10 @@ public class Perusahaan {
         this.pencacahanDPP = pencacahanDPP;
         this.subsektor = subsektor;
         this.jenisUsahaUtama20 = jenisUsahaUtama20;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
     }
 
     public Identitas getIdentitasPerusahaan2_6() {
